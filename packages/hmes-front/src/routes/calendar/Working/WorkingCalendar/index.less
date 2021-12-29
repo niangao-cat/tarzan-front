@@ -1,0 +1,163 @@
+.primaryBtn {
+  border-color: #29bece !important;
+  background-color: #29bece !important;
+  color: #fff;
+}
+
+.primaryBtn:hover {
+  color: #fff;
+}
+
+.content {
+  height: 100%;
+
+  .bottomContent {
+    height: calc(100% - 40px);
+
+    .leftTree {
+      width: 300px;
+      height: calc(100% - 24px);
+      box-shadow: 0 0 3px 0 rgba(105, 105, 105, 0.28);
+    }
+  }
+}
+
+.customCalendar {
+  position: relative;
+
+  .customIcon {
+    font-size: 28px;
+    position: absolute;
+    left: 190px;
+    top: 3px;
+    cursor: pointer;
+  }
+
+  :global {
+    .ant-fullcalendar-header {
+      padding-left: 11px;
+      text-align: left;
+    }
+
+    .ant-fullcalendar-tbody tr {
+      td:nth-child(6n) .ant-fullcalendar-value {
+        color: red;
+      }
+      td:nth-child(7n) .ant-fullcalendar-value {
+        color: red;
+      }
+    }
+
+    .ant-fullcalendar-fullscreen .ant-fullcalendar-header .ant-radio-group {
+      display: none;
+    }
+
+    .ant-fullcalendar-fullscreen .ant-fullcalendar-content::-webkit-scrollbar {
+      width: 1px;
+    }
+    .ant-fullcalendar-fullscreen .ant-fullcalendar-content::-webkit-scrollbar-thumb {
+      border-radius: 1px;
+      //box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.2);
+    }
+  }
+
+  .ulWrapper {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    .listItem {
+      display: flex;
+      justify-content: space-between;
+      height: 20px;
+      margin-bottom: 5px;
+
+      .listCode {
+        width: calc(30% - 2px);
+        box-sizing: content-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border-radius: 7px;
+        margin-right: 5px;
+        white-space: nowrap;
+      }
+
+      .listPeriod {
+        width: 70%;
+        box-sizing: content-box;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        border-radius: 7px;
+        text-align: center;
+        white-space: nowrap;
+      }
+    }
+  }
+}
+
+.customTitle {
+  display: flex;
+  justify-content: space-between;
+
+  .buttonGroup {
+    margin-right: 20px;
+
+    button {
+      margin-left: 10px;
+    }
+  }
+}
+
+.customMenu {
+  width: 300px;
+  border: 1px solid #d5dae0;
+  margin: 0;
+  padding: 0;
+  list-style: none !important;
+  max-height: 185px;
+  overflow: auto;
+
+  .listItem {
+    display: flex;
+    justify-content: space-between;
+    line-height: 45px;
+    padding: 0 30px;
+
+    .listCode {
+      text-align: center;
+    }
+
+    .listPeriod {
+      width: 125px;
+      text-align: left;
+
+      .listPeriodDay {
+        font-size: 7px;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .listItemActive {
+    background-color: #29bece;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    line-height: 45px;
+    padding: 0 30px;
+
+    .listCode {
+      text-align: center;
+    }
+
+    .listPeriod {
+      width: 125px;
+      text-align: left;
+
+      .listPeriodDay {
+        font-size: 7px;
+        font-weight: bold;
+      }
+    }
+  }
+}

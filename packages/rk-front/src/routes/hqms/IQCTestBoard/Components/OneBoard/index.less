@@ -1,0 +1,391 @@
+.production-board-one {
+  // margin-top: 0.3rem;
+
+  .production-board-one-BorderBox15 {
+    margin-top: 0.1rem;
+    // padding-bottom: 2rem;
+    .production-board-one-div{
+      float: left;
+      height: 0.5rem;
+      padding: 0 0.1rem;
+      font-size: 0.3rem;
+    }
+
+    .production-board-one-div-right {
+      float: right;
+      height: 0.5rem;
+      margin-left: 0.08rem;
+      font-size: 0.25rem;
+      margin-bottom: 0.08rem;
+      margin-right: 0.1rem;
+      line-height: 0.5rem;
+    }
+    .production-board-one-BorderBox7 {
+      width: 1.4rem;
+      height: 0.7rem;
+      float: left;
+      font-size: 0.28rem;
+      text-align: center;
+      color: #DAB276;
+      padding: 0.139rem 0;
+      font-style: oblique;
+    }
+    .production-board-one-div-chart-yield,
+    .production-board-one-div-table-yield{
+      height: 4.6rem;
+    }
+
+    .production-board-one-div-line {
+      height: 10rem;
+      .production-board-one-div-line-yield {
+        height: 3.3rem;
+      }
+    }
+    .center-production-board-one-div-bar {
+      height: 4.6rem;
+      .production-board-one-div-bar-yield {
+        height: 2.2rem;
+      }
+    }
+  }
+}
+
+.inspection {
+  :global {
+
+    .oddRow {
+      // background: #113057;
+      background:'rgba(255,255,255,0.1)';
+      color: #fff;
+      font-size: 8px;
+    }
+
+    .evenRow {
+      background:#37588085 !important;
+      // background: #1D81C7;
+      color: #fff;
+      font-size: 8px;
+    }
+
+    // .oddRow {
+    //   background:'rgba(255,255,255,0.1)' ;
+    //   color: #fff;
+    // }
+
+    .ant-table-tbody > tr.ant-table-row-level-0:hover > td {
+      // background: #99acaa;
+      background: transparent;
+    }
+
+    .ant-table tbody > tr.ant-table-row-selected > td{
+      background: #758583;
+    }
+    .ant-table-selection{
+      color: white;
+      background: #3071b9 !important;
+      }
+    .ant-table-wrapper {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      padding-left: 10px !important;
+      padding-right: 0 !important;
+      width: 96% !important;
+    }
+    .ant-table-wrapper .ant-table .ant-table-thead > tr > th {
+      color: white;
+      background: #37588085 !important;
+      font-size: 8px !important;
+      padding: 0 0.05rem;
+      white-space: normal;
+      text-align: center;
+      line-height: 18px;
+      height: 25px;
+      min-height: 25px;
+    }
+    .ant-table-thead > tr >th{
+      color: white;
+      background: #3071b9 !important;
+      background:green !important;
+
+    }
+    //修改列表文字、背景颜色
+    .ant-table-tbody > tr >th{
+      color: white;
+      background: #3071b9 !important;
+    }
+
+    .ant-pagination .ant-table-pagination{
+      display: none !important;
+    }
+
+    .ant-table-wrapper .ant-table table .ant-table-tbody > tr > td {
+      padding: 0.08rem 0.05rem;
+    }
+
+    .ant-table-placeholder {
+      background-color: transparent;
+      color: rgb(256, 256, 256, 0.6)
+    }
+  }
+
+}
+
+.production-board-title {
+  padding: 0 0.25rem;
+  color: #bcdcff;
+  font-size: 0.2rem;
+  font-weight: bold;
+  height: 0.7rem;
+  padding-top: 0.2rem;
+  .iconfont {
+    font-size: 0.175rem;
+    margin-right: 0.125rem;
+    color: #89e5ff;
+    font-weight: 400;
+  }
+}
+
+.production-board-no-data {
+  text-align: center;
+  color: #fff;
+  padding-top: 12px;
+}
+
+
+.Father-thebox {
+  width: 100%;
+  height: 300%;
+  background: white;
+  zoom: 0.63;
+
+  .Title-thebox {
+    width: 100%;
+    background: #203864;
+    display: flex;
+    color: white;
+    font-size: 21px;
+  }
+
+  .Title-thetime {
+    width: 34%;
+    margin-top: 6px;
+    margin-left: 17px;
+  }
+
+  .Title-theboard {
+    text-align: center;
+    width: 30%;
+    font-size: 28px;
+    font-family: 'Microsoft YaHei', serif !important;
+    background-image: -webkit-linear-gradient(bottom, #eaecef, #80f2ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .content-thebox {
+    width: 100%;
+    //height: 60%;
+    box-sizing: border-box;
+    display: flex;
+    padding: 2px;
+    background: white;
+
+    .content-thebox-A-title {
+      text-align: center;
+      font-size: 16px;
+      color: white;
+      background: #203864;
+    }
+    .content-thebox-B-title {
+      text-align: center;
+      font-size: 16px;
+      color: white;
+      background: #203864;
+    }
+    .content-thebox-C-title {
+      text-align: center;
+      font-size: 16px;
+      color: white;
+      background: #203864;
+    }
+  }
+
+  .content-thebox #contenttheBoxA {
+    width: 49%;
+    height: 100%;
+    // color: white;
+    background: #203864;
+  }
+
+  .content-thebox #contenthetBoxB {
+    width: 51%;
+    height: 300%;
+    border-right: 2px solid #203864;
+    // padding-left: 20px;
+    margin-left: 1px;
+    color: white;
+    background: #203864;
+
+    .scroll {
+      width: 100%;
+      height: 165px;
+      // justify-content: space-between;
+      // overflow-y: hidden;
+      // display: flex;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+
+      span {
+        margin: 10px;
+      }
+    }
+  }
+
+  .foot-box {
+    //height: 40%;
+    width: 100%;
+    background: #203864;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .foot-box #footBoxA {
+    height: 100%;
+    width: 25%;
+    background: white;
+  }
+
+  .foot-box #footBoxB {
+    height: 100%;
+    width: 25%;
+    background: white;
+    color: white;
+    font-size: 14px;
+
+  }
+
+  .foot-box #footBoxC {
+    height: 100%;
+    width: 50%;
+    background: white;
+
+
+    .footBoxC-title {
+      text-align: center;
+      font-weight: bolder;
+      color: white;
+      font-size: 17px;
+      margin-top: 4%;
+    }
+  }
+
+}
+
+
+
+.iqc-test-board-card {
+  padding: 4px;
+  background-color: #fff;
+  height: 125px;
+
+  .board-card-code {
+    width: 20px;
+    float: left;
+  }
+
+  .board-card-number {
+    overflow: hidden; //超出的文本隐藏
+    text-overflow: ellipsis; //溢出用省略号显示
+    white-space: nowrap;
+    cursor: pointer;
+
+    :global {
+      .ant-divider,
+      .ant-divider-vertical {
+        margin: 0 1px;
+        top: -3px;
+      }
+    }
+  }
+
+  :global {
+    .ant-divider,
+    .ant-divider-vertical {
+      top: -3px;
+      margin: 8px 0 3px;
+    }
+  }
+}
+.board-tag {
+  border: 1px solid #8bacff;
+  background-color: #fff;
+  height: 125px;
+  transform: scale(0.85);
+  box-shadow: darkgrey 2px 2px 6px 5px;
+  .board-tag-title {
+    border-bottom: 1px solid #8bacff;
+    font-size: 4px;
+    transform: scale(0.85);
+    padding: 9px;
+  }
+}
+.receivingMaterial {
+  padding: 4px;
+  background-color: #fff;
+  margin-right: 7px;
+  width: 48.5%;
+  box-shadow: darkgrey 3px 11px 20px 5px; //边框阴影
+}
+.receiptWaitingTime {
+  padding: 4px;
+  background-color: #fff;
+  margin-left: 7px;
+  width: 48.5%;
+  box-shadow: darkgrey 3px 11px 20px 5px; //边框阴影
+}
+.receiving {
+  // padding: 4px;
+  background-color: #fff;
+  // margin-right: 7px;
+  // width: 50%;
+  box-shadow: darkgrey 3px 11px 20px 5px; //边框阴影
+}
+.receiptTable{
+  padding: 4px;
+  background-color: #fff;
+  margin-left: 7px;
+  width: 48%;
+  box-shadow: darkgrey 3px 11px 20px 5px; //边框阴影
+}
+.logo {
+  width: 100%;
+  position: fixed;
+  bottom: 10px;
+  text-align: center;
+  background-color: transparent;
+}
+
+:global {
+  .page-content-wrap {
+    height: 100%;
+    .page-content {
+      margin: 8px 8px 16px;
+      background-color: transparent;
+    }
+    .ant-divider-horizontal.ant-divider-with-text:before,
+    .ant-divider-horizontal.ant-divider-with-text-left:before,
+    .ant-divider-horizontal.ant-divider-with-text-right:before,
+    .ant-divider-horizontal.ant-divider-with-text:after,
+    .ant-divider-horizontal.ant-divider-with-text-left:after,
+    .ant-divider-horizontal.ant-divider-with-text-right:after {
+      border-top: 1px solid #fff;
+    }
+    .ant-divider-horizontal.ant-divider-with-text,
+    .ant-divider-horizontal.ant-divider-with-text-left,
+    .ant-divider-horizontal.ant-divider-with-text-right {
+      margin: 5px 0;
+    }
+  }
+}
+

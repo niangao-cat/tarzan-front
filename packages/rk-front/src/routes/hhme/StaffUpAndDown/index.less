@@ -1,0 +1,88 @@
+.staffUpAndDown_staffInfo {
+  background: rgba(235, 240, 252, 1);
+  border: 1px solid rgba(139, 172, 255, 1);
+  height: 669px;
+  .staffUpAndDown_img {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 3px;
+  }
+  :global{
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+    .ant-form-item-label {
+      label {
+        color: #4766CC;
+      }
+    }
+  }
+}
+
+.stuffUpAndDown_calendar {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+  margin: 0 10px;
+  margin-bottom: 10px;
+  .stuffUpAndDown_date {
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  .stuffUpAndDown_date:hover {
+    background-color: rgba(0, 0, 0, 0.15);
+  }
+  .stuffUpAndDown_disabled-date {
+    color: rgba(0, 0, 0, 0.25);
+  }
+  .stuffUpAndDown_current-date {
+    border: 1px solid #1890FF;
+  }
+  .stuffUpAndDown_selected-date {
+    background-color: #1890FF;
+    color: #fff
+  }
+  .stuffUpAndDown_absence-date {
+    background-image: url('../../../assets/stuffUpAndDown/absence.png');
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+  }
+  .stuffUpAndDown_attendance-date {
+    background-image: url('../../../assets/stuffUpAndDown/attendance.png');
+    background-position: 100% 0;
+    background-repeat: no-repeat;
+  }
+  :global {
+    .ant-fullcalendar td {
+      line-height: 25px;
+      padding: 0 3px;
+      text-align: center;
+    }
+    .ant-fullcalendar table {
+      height: 226px;
+    }
+  }
+}
+
+.stuffUpAndDown_info-date {
+  line-height: 24px;
+  margin-bottom: 5px;
+  img {
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 2px;
+  }
+  .stuffUpAndDown_info-label {
+    color: #4766CC;
+    margin: 0 10px;
+  }
+}
+
+.stuffUpAndDown_info-content {
+  margin: 0 5px 0 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  height: 64px;
+  padding: 7px 0 0 10px;
+}

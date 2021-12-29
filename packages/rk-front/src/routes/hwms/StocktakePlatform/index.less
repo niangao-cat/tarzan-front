@@ -1,0 +1,44 @@
+.line-title {
+  height: 20px;
+  margin-bottom: 5px;
+  span {
+    float: left;
+    width: 5px;
+    background-color: #29bece;
+    margin-right: 5px;
+    height: 100%;
+  }
+  div {
+    float: left;
+    line-height: 20px;
+  }
+}
+
+
+.head-table {
+  :global {
+    .ant-table-wrapper .ant-table .ant-table-thead > tr > th {
+      padding: 5px;
+      height: 25px;
+    }
+    .ant-table-thead .ant-table-selection-column .ant-table-selection {
+      text-align: center;
+    }
+    .ant-table-wrapper .ant-table table .ant-table-tbody > tr > td {
+      padding: 3px 5px;
+    }
+    .ant-table .ant-table-body .ant-table-tbody .ant-table-row .ant-table-selection-column {
+      text-align: center;
+    }
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+    .ant-form-item-control {
+      line-height: 28px;
+    }
+  }
+}
+
+.duplicate-rows {
+  background-color: #e3f1f5 !important;
+}

@@ -1,0 +1,110 @@
+.time-management-station {
+  .timeManagement_item-title {
+    color: #333;
+    height: 35px;
+    width: 100%;
+    display: flex;
+    .timeManagement_item-title-box {
+      display: inline-block;
+      width: 5px;
+      height: 25px;
+      align-self: center;
+      margin-right: 10px;
+      background: rgba(139, 172, 255, 1);
+    }
+    .timeManagement_item-title-text {
+      align-self: center;
+    }
+  }
+
+  .timeManagement_station-item {
+    width: 100%;
+    padding-bottom: 10px;
+    position: relative;
+    .timeManagement_serial-item-content,
+    .timeManagement_station-item-content,
+    .timeManagement_station-item-content-new {
+      padding: 0 10px;
+      height: 156px;
+      overflow-y: scroll;
+      width: 100%;
+      padding-right: 5px;
+    }
+  }
+
+  .timeManagement_martial-content {
+    min-height: 46px;
+    width: 100%;
+    border: 1px solid #45acf1;
+    margin-top: 6px;
+    .timeManagement_martial-orderSeq {
+      float: left;
+      height: 100%;
+      width: 10%;
+      background: #45acf1;
+      line-height: 45px;
+      text-align: center;
+      margin-left: -1px;
+      color: #fff;
+    }
+    .timeManagement_martial-center {
+      width: 70%;
+      height: 100%;
+      float: left;
+      cursor: pointer;
+      border-right: 1px solid #45acf1;
+      div {
+        padding-left: 8px;
+      }
+      .timeManagement_martial-name {
+        min-height: 23px;
+        line-height: 23px;
+        border-bottom: 1px dashed #3a789b;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      .timeManagement_martial-code {
+        min-height: 21px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+      input {
+        border: 0;
+        height: 100%;
+        padding: 0;
+        width: 99%;
+      }
+      :global {
+        .ant-input:focus {
+          box-shadow: none;
+        }
+        .ant-input {
+          padding-left: 0;
+          padding-right: 0;
+          background: transparent;
+        }
+      }
+    }
+    .timeManagement_martial-right {
+      width: 20%;
+      height: 100%;
+      float: left;
+      div {
+        height: 50%;
+        text-align: center;
+      }
+      .timeManagement_martial-quantity {
+        min-height: 24px;
+        line-height: 23px;
+        border-bottom: 1px dashed #3a789b;
+      }
+      .timeManagement_martial-uom {
+        min-height: 23px;
+        word-wrap: break-word;
+        word-break: normal;
+      }
+    }
+  }
+}

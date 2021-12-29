@@ -1,0 +1,480 @@
+.cos-inspection-platform-table {
+  background-color: #fff;
+  height: 335px;
+
+  :global {
+    .ant-table-wrapper .ant-table .ant-table-thead>tr>th {
+      padding: 2px;
+      height: 25px;
+    }
+
+    .ant-table-wrapper .ant-table table .ant-table-tbody>tr>td {
+      padding: 3px 5px;
+    }
+
+    .ant-table .ant-table-body .ant-table-tbody .ant-table-row .ant-table-selection-column {
+      padding-left: 14px;
+    }
+
+    .ant-form-item {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.cos-inspection-platform-bottom-position {
+  background-color: #fff;
+  height: 323px;
+  padding-top: 8px;
+
+  .data-content {
+    width: 100%;
+    height: 300px;
+    // border: 1px solid #e0e0e0;
+    .data-click {
+      background-color: #bfbfbf;
+    }
+    .data-table {
+      height: 245px;
+      // padding: 0 10px;
+      // margin-top: 10px;
+    }
+    .data-between {
+      :global {
+        .ant-input {
+          background-color: #019f99;
+          color: #fff;
+        }
+      }
+    }
+    .data-null {
+      .ant-input {
+        background-color: #fff;
+      }
+    }
+    .data-out {
+      :global {
+        .ant-input {
+          background-color: #d84949;
+          color: #fff;
+        }
+      }
+    }
+    :global {
+      .ant-input-number-input {
+        display: inline-block;
+        text-align: center;
+      }
+      .ant-form-item {
+        margin-bottom: 0;
+      }
+      .ant-table {
+        th {
+          padding: 2px 0 !important;
+          text-align: center !important;
+        }
+        .ant-table-content {
+          border-bottom: 0;
+          .ant-table-thead {
+            th {
+              height: 27px;
+            }
+          }
+          .ant-table-tbody {
+            border: 0 !important;
+            tr {
+              td {
+                padding: 6px 0 !important;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .data-button {
+      float: right;
+      margin: 8px 0 0 0;
+      padding: 0 10px;
+      button {
+        width: 65px;
+      }
+      .data-button-get {
+        background-color: #4766cc;
+        margin-right: 10px;
+        color: #fff;
+        border: 0;
+      }
+      .data-button-detail {
+        background-color: #008bdc;
+        margin-right: 10px;
+        color: #fff;
+        border: 0;
+      }
+      .operationPlatform_data-button-ok {
+        background-color: #019f99;
+        margin-right: 10px;
+        color: #fff;
+        border: 0;
+      }
+      .operationPlatform_data-button-ng {
+        background-color: #d84949;
+        color: #fff;
+        border: 0;
+      }
+    }
+  }
+
+  :global {
+    .ant-table-wrapper .ant-table .ant-table-thead>tr>th {
+      padding: 2px;
+      height: 25px;
+    }
+
+    .ant-table-wrapper .ant-table table .ant-table-tbody>tr>td {
+      padding: 3px 5px;
+    }
+
+    .ant-table .ant-table-body .ant-table-tbody .ant-table-row .ant-table-selection-column {
+      padding-left: 14px;
+    }
+
+    .ant-form-item {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.cos-inspection-platform-site-card {
+  :global {
+    .ant-card-body {
+      padding: 10px;
+    }
+  }
+}
+
+.cos-inspection-platform-equipment-card {
+  margin-top: 8px;
+  height: 285px;
+
+  .station-item {
+    width: 100%;
+    height: 420px;
+    border: 1px solid #e0e0e0;
+    padding-bottom: 10px;
+    position: relative;
+
+    .serial-item-content,
+    .station-item-content {
+      padding: 0 10px;
+      height: 185px;
+      width: 100%;
+      padding-right: 5px;
+    }
+
+    button {
+      position: absolute;
+      height: 46px;
+      width: 92%;
+      margin-top: 6px;
+      background-color: #fff;
+      bottom: -46px;
+      left: 10px;
+
+      i {
+        font-size: 30px;
+        color: #42566b;
+      }
+    }
+  }
+
+  .martial-content {
+    min-height: 46px;
+    width: 100%;
+    border: 1px solid #45acf1;
+    margin-top: 6px;
+
+    .martial-orderSeq {
+      float: left;
+      height: 100%;
+      width: 10%;
+      background: #45acf1;
+      line-height: 45px;
+      text-align: center;
+      margin-left: -1px;
+      color: #fff;
+    }
+
+    .martial-center {
+      width: 70%;
+      height: 100%;
+      float: left;
+      border-right: 1px solid #45acf1;
+
+      div {
+        padding-left: 8px;
+      }
+
+      .martial-name {
+        min-height: 23px;
+        line-height: 23px;
+        border-bottom: 1px dashed #3a789b;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+      .martial-code {
+        min-height: 21px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+
+      input {
+        border: 0;
+        height: 100%;
+        padding: 0;
+        width: 99%;
+      }
+
+      :global {
+        .ant-input:focus {
+          box-shadow: none;
+        }
+
+        .ant-input {
+          padding-left: 0;
+          padding-right: 0;
+        }
+      }
+    }
+
+    .martial-right {
+      width: 20%;
+      height: 100%;
+      float: left;
+
+      div {
+        height: 50%;
+        text-align: center;
+      }
+
+      .martial-quantity {
+        min-height: 24px;
+        line-height: 23px;
+        border-bottom: 1px dashed #3a789b;
+      }
+
+      .martial-uom {
+        min-height: 23px;
+        word-wrap: break-word;
+        word-break: normal;
+      }
+    }
+  }
+
+  .material-content-grey {
+    border-color: #666;
+
+    .martial-orderSeq {
+      background-color: #666;
+    }
+
+    .martial-center {
+      border-color: #666;
+
+      .martial-name {
+        border-color: #666;
+      }
+    }
+  }
+
+  :global {
+    .ant-card-head {
+      padding: 0 8px;
+      min-height: 37px;
+
+      .ant-card-head-title {
+        padding: 8px 0;
+      }
+    }
+
+    .ant-card-body {
+      padding: 0;
+    }
+  }
+}
+
+.incoming-material-bottom-form {
+  background-color: #fff;
+  height: 300px;
+}
+
+.incoming-material-link {
+  background-color: #fff;
+  height: 300px;
+}
+
+.cos-inspection-platform-link-card {
+  .cos-inspection-platform-link-card-button {
+    width: 100%;
+    height: 302px;
+
+    div:hover {
+      border-color: #45acf1;
+      color: #45acf1;
+    }
+
+    div {
+      width: 100%;
+      height: 48px;
+      border: 1px solid #d9d9d9;
+      border-radius: 4px;
+      color: #333;
+      line-height: 48px;
+      margin-bottom: 16px;
+      padding: 0 5px;
+      cursor: pointer;
+
+      .incoming-material-entry-link-quantity {
+        float: right;
+        color: #333;
+      }
+
+      .incoming-material-entry-link-span {
+        float: left;
+        width: 2px;
+        height: 16px;
+        margin: 16px 5px 0 0;
+        background-color: #45acf1;
+      }
+    }
+  }
+
+  :global {
+    .ant-card-body {
+      padding: 10px;
+    }
+  }
+}
+
+.cos-inspection-click {
+  background-color: #bfbfbf;
+}
+
+.cos-inspection-platform-bottom-title {
+  border: 1px solid #bbb;
+  border-bottom: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.cos-inspection-platform-nctype {
+  padding-left: 10px;
+  padding-right: 5px;
+  padding-bottom: 10px;
+  border: 1px solid #bbb;
+  border-top: none;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  height: 200px;
+
+  :global {
+    .c7n-pro-checkbox-button {
+      margin-right: 10px;
+      margin-top: 6px;
+    }
+
+    .c7n-pro-checkbox-button .c7n-pro-checkbox-inner+span {
+      color: #999;
+    }
+
+    .c7n-pro-checkbox-inner {
+      border-radius: 5px;
+    }
+  }
+}
+
+.cosInspectionPlatform_data-click {
+  background-color: #bfbfbf;
+}
+.cosInspectionPlatform_data-between {
+  :global {
+    .ant-input {
+      background-color: #019f99;
+      color: #fff;
+    }
+  }
+}
+.cosInspectionPlatform_data-null {
+  .ant-input {
+    background-color: #fff;
+  }
+}
+.cosInspectionPlatform_data-out {
+  :global {
+    .ant-input {
+      background-color: #d84949;
+      color: #fff;
+    }
+  }
+}
+
+.data-button {
+  float: right;
+  margin: 8px 0 0 0;
+  padding: 0 10px;
+  button {
+    width: 65px;
+  }
+  .data-button-get {
+    background-color: #4766cc;
+    margin-right: 10px;
+    color: #fff;
+    border: 0;
+  }
+  .data-button-detail {
+    background-color: #008bdc;
+    margin-right: 10px;
+    color: #fff;
+    border: 0;
+  }
+  .cosInspectionPlatform_data-button-ok {
+    background-color: #019f99;
+    margin-right: 10px;
+    color: #fff;
+    border: 0;
+  }
+  .cosInspectionPlatform_data-button-ng {
+    background-color: #d84949;
+    color: #fff;
+    border: 0;
+  }
+}
+
+.cosInspectionPlatform_head-table {
+  :global {
+    .ant-table-wrapper .ant-table .ant-table-thead > tr > th {
+      padding: 5px;
+      height: 25px;
+    }
+    .ant-table-thead .ant-table-selection-column .ant-table-selection {
+      text-align: center;
+    }
+    .ant-table-wrapper .ant-table table .ant-table-tbody > tr > td {
+      padding: 3px 5px;
+    }
+    .ant-table .ant-table-body .ant-table-tbody .ant-table-row .ant-table-selection-column {
+      text-align: center;
+    }
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+    .ant-form-item-control {
+      line-height: 28px;
+    }
+  }
+}

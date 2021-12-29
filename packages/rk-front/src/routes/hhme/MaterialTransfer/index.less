@@ -1,0 +1,221 @@
+.material-transfer-first-row {
+  background-color: #fff;
+  padding: 6px;
+
+  .materials-content {
+    height: 280px;
+    background: #ebf0fc;
+    border-radius: 5px;
+
+    .materials-content-search {
+      padding: 5px 5px 0 5px;
+
+      :global {
+        .ant-form-item {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+    .materials-content-div {
+      padding: 5px 5px;
+      height: 29px;
+
+      .materials-content-label {
+        float: left;
+        width: 100px;
+        text-align: end;
+        font-size: 14px;
+        color: #333;
+        line-height: 19px;
+      }
+
+      .materials-content-value {
+        font-size: 14px;
+        color: #666;
+        line-height: 19px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+
+    :global {
+      .ant-form-item-label label {
+        color: #68b3ea;
+        font-size: 14px;
+        line-height: 19px;
+      }
+
+      .ant-form-item-control-wrapper {
+        color: #fff;
+        font-size: 14px;
+        line-height: 19px;
+      }
+    }
+  }
+
+  .barcode-content {
+    height: 250px;
+    // overflow: auto;
+
+    .barcode-content-info-material-transfer {
+      border: 1px solid #45acf1;
+      //width: 513px;
+      width: 430px;
+      height: 70px;
+      border-radius: 5px;
+      margin-top: 4px;
+      margin-right: 10px;
+
+      :global {
+        .ant-form-item-label {
+          line-height: 20px;
+        }
+
+        .ant-form-item-label label {
+          color: #68b3ea;
+        }
+
+        .ant-form-inline .ant-form-item {
+          //margin-right: 30px;
+          padding: 4px 0;
+        }
+
+        .ant-form-item-control-wrapper {
+          color: #666;
+          line-height: 16px;
+          font-size: 12px;
+
+          .ant-form-item-control {
+            line-height: 20px;
+
+            .ant-form-item-children {
+
+              input {
+                border: 1px solid rgba(221, 221, 221, 1);
+              }
+            }
+          }
+        }
+      }
+
+      .barcode-content-info-orderSeq {
+        width: 35px;
+        font-size: 18px;
+        color: rgba(112, 187, 243, 1);
+        line-height: 39px;
+        float: left;
+        border-right: 1px solid #45acf1;
+        padding: 15px 11px;
+
+        .materialLotCode {
+          width: 47px;
+          overflow: hidden; //超出的文本隐藏
+          text-overflow: ellipsis; //溢出用省略号显示
+          white-space: nowrap;
+          cursor: pointer;
+        }
+      }
+
+      .barcode-content-info-div {
+        float: left;
+        height: 100%;
+        padding: 18px 0 18px 2%;
+
+        .barcode-content-info-label {
+          font-size: 12px;
+          color: rgba(112, 187, 243, 1);
+          line-height: 16px;
+        }
+
+        button {
+          background-color: #42566b;
+          border: 1px solid #42566b;
+          color: #9cadc2;
+        }
+
+        input {
+          background-color: #23324f;
+          color: #fff;
+        }
+
+        .barcode-content-info-value {
+          font-size: 12px;
+          color: rgba(255, 255, 255, 1);
+          line-height: 16px;
+        }
+
+        .barcode-content-info-Icon {
+          font-size: 18px;
+          color: #42566b;
+        }
+      }
+    }
+  }
+}
+
+.material-transfer-second-row {
+  background-color: #fff;
+  margin-top: 8px;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+
+  .barCodeAndMaterials-content {
+    .barCodeAndMaterials-content-div {
+      overflow: hidden; //超出的文本隐藏
+      text-overflow: ellipsis; //溢出用省略号显示
+      white-space: nowrap;
+    }
+
+    float: left;
+    border-radius: 5px;
+    border: 1px solid rgba(69, 172, 241, 1);
+    margin-left: 8px;
+    width: 235px;
+    height: 327px;
+    margin-top: 6px;
+
+    :global {
+      .ant-card-body {
+        padding: 0;
+        padding-top: 4px;
+        height: 303px;
+
+        .ant-form {
+          .ant-form-item {
+            margin-bottom: 0;
+
+            .ant-form-item-label label {
+              color: #749dc1;
+            }
+
+            .ant-form-item-label {
+              line-height: 33.9999px;
+            }
+
+            .ant-form-item-control {
+              line-height: 33.9999px;
+            }
+
+            .ant-form-item-children {
+              div {
+                color: #666;
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .material-transfer-second-row-button {
+    :global {
+      .ant-btn .anticon {
+        font-size: 46px;
+        color: #6f828f;
+      }
+    }
+  }
+}

@@ -1,0 +1,55 @@
+.chip-table {
+  border: solid #ccc 1px;
+  // position: absolute;
+  border-radius: 10px;
+  margin: auto;
+}
+
+.chip-table td,
+.chip-table th {
+  border-right: solid #ccc 1px;
+  /*设置表格单元格外边框，只设置右下边框*/
+  border-bottom: solid #ccc 1px;
+  padding: 2px 7px;
+  /*设置单元格内边距，单元格内容显得不拥挤*/
+  text-align: center;
+  /*单元格内容居中*/
+}
+
+.chip-table thead {
+  background-color: #dce9f9;
+  /*设置表头背景色*/
+}
+
+.chip-table td:last-child,
+.chip-table th:last-child {
+  border-right: none;
+  /*去掉表格每一行最后一列的右边框*/
+}
+
+.chip-table tr:last-child td {
+  border-bottom: none;
+  /*去掉最后一行中所有单元格的下边框*/
+}
+
+/*单元格设置圆角*/
+.chip-table th:first-child {
+  border-radius: 10px 0 0 0;
+}
+
+.chip-tableth:last-child {
+  border-radius: 0 10px 0 0;
+}
+
+.chip-table tr:last-child td:first-child {
+  border-radius: 0 0 0 10px;
+}
+
+.chip-table tr:last-child td:last-child {
+  border-radius: 0 0 10px 0;
+}
+
+/*鼠标移动至单元格，单元格高亮显示*/
+.chip-tabletd:hover {
+  background: #fbf8e9;
+}

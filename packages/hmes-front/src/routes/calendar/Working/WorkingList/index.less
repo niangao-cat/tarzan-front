@@ -1,0 +1,60 @@
+.dataSource {
+  &-search-form {
+    :global {
+      .ant-form-item {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
+.tableAddBtn {
+  margin: 10px 0 16px 16px;
+  float: right;
+  z-index: 2;
+}
+
+.primaryBtn {
+  border-color: #29bece;
+  background-color: #29bece;
+  color: #fff;
+}
+
+.primaryBtn:hover {
+  color: #fff;
+}
+
+.organizationDrawerContent {
+  height: 100%;
+
+  .bottomContent {
+    display: flex;
+    justify-content: space-between;
+    height: calc(100% - 40px);
+
+    .leftTree {
+      width: 300px;
+      height: calc(100% - 24px);
+      box-shadow: 0 0 3px 0 rgba(105, 105, 105, 0.28);
+    }
+
+    .centerButton {
+      width: 70px;
+      float: left;
+      font-size: 30px;
+      margin-top: 30px;
+      padding: 0 20px;
+
+      :global {
+        .ant-btn {
+          padding: 0 6px;
+          height: 25px;
+        }
+      }
+    }
+
+    .rightTable {
+      width: 350px;
+    }
+  }
+}

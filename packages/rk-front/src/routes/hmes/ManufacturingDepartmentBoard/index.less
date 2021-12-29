@@ -1,0 +1,101 @@
+.production-back {
+  position: relative;
+  overflow: hidden;
+  margin: 0px;
+  padding: 10px 0 0 0;
+  background-color: #203864;
+  height: 100%;
+  background-size: cover;
+}
+
+.production-center-board-button-box {
+  :global {
+
+    .ant-btn:hover,
+    .ant-btn:focus,
+    .ant-btn:active,
+    .ant-btn.active {
+      color: #bcdcff;
+      background: rgb(3, 5, 12);
+      border-color: #bcdcff;
+    }
+  }
+
+  .production-center-board-button {
+    color: rgb(128, 163, 202);
+    background: rgb(3, 5, 12);
+    border-color: rgb(128, 163, 202);
+  }
+
+  .production-center-board-button-click {
+    color: #bcdcff;
+    background: rgb(3, 5, 12);
+    border-color: #bcdcff;
+  }
+}
+
+.production-center-board-spinning {
+  :global {
+    .ant-spin-nested-loading>div>.ant-spin {
+      max-height: 100%;
+    }
+  }
+}
+
+.manufacturingDepartmentBoard_select-content {
+  position: relative;
+  border: 1px solid #00ffff;
+  width: 150px;
+  height: 22px;
+  line-height: 22px;
+  float: left;
+  margin-right: 150px;
+  cursor: pointer;
+  text-align: center;
+  color: #00ffff;
+  box-sizing: content-box;
+
+  .manufacturingDepartmentBoard_select-current-value {
+    background: #2B5989;
+    color: #00FFFF;
+    height: 100%;
+  }
+
+  .manufacturingDepartmentBoard_select-list-value:hover {
+    background: #205599;
+    color: #00FFFF;
+    cursor: pointer;
+  }
+
+  .manufacturingDepartmentBoard_select-icon {
+    float: right;
+    line-height: 25px;
+    margin-right: 5px;
+  }
+
+  .manufacturingDepartmentBoard_select-list {
+    position: absolute;
+    z-index: 100;
+    display: none;
+    top: 18px;
+
+    div {
+      width: 150px;
+      height: 35px;
+      text-align: left;
+      padding: 5px 5px 10px 5px;
+      cursor: pointer;
+      background: #2B5989;
+    }
+  }
+
+}
+
+
+.manufacturingDepartmentBoard_select-content:hover .manufacturingDepartmentBoard_select-list {
+  display: block;
+}
+
+.manufacturingDepartmentBoard_select-content .manufacturingDepartmentBoard_select-list:hover {
+  display: block !important;
+}

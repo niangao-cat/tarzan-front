@@ -1,0 +1,44 @@
+.row {
+  padding-top: 8px;
+  margin-bottom: 14px;
+
+  .col {
+    display: inline-flex;
+    // display: flex;
+    span {
+      flex: 1;
+      line-height: 28px;
+      text-align: right;
+    }
+
+    span::after {
+      content: ':';
+      margin: 0 8px 0 2px;
+      position: relative;
+      top: -0.5px;
+    }
+
+    input {
+      width: 226px;
+    }
+  }
+}
+
+.eventRow {
+  padding-top: 8px;
+  margin-bottom: 14px;
+  text-align: right;
+
+  .leftCol {
+    label {
+      line-height: 28px;
+    }
+
+    label::after {
+      content: ':';
+      margin: 0 8px 0 2px;
+      position: relative;
+      top: -0.5px;
+    }
+  }
+}

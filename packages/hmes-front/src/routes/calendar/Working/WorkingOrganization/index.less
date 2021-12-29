@@ -1,0 +1,55 @@
+.primaryBtn {
+  border-color: #29bece !important;
+  background-color: #29bece !important;
+  color: #fff;
+}
+
+.primaryBtn:hover {
+  color: #fff;
+}
+
+.content {
+  height: 100%;
+
+  .bottomContent {
+    height: calc(100% - 40px);
+
+    .leftTree {
+      width: 300px;
+      height: calc(100% - 24px);
+      box-shadow: 0 0 3px 0 rgba(105, 105, 105, 0.28);
+    }
+  }
+}
+
+.customCalendar {
+  position: relative;
+
+  .customIcon {
+    font-size: 28px;
+    position: absolute;
+    right: 0;
+    top: 3px;
+    cursor: pointer;
+  }
+
+  :global {
+    .ant-fullcalendar-header {
+      padding-left: 11px;
+      text-align: left;
+    }
+
+    .ant-fullcalendar-tbody tr {
+      td:nth-child(6n) .ant-fullcalendar-value {
+        color: red;
+      }
+      td:nth-child(7n) .ant-fullcalendar-value {
+        color: red;
+      }
+    }
+
+    .ant-fullcalendar-fullscreen .ant-fullcalendar-header .ant-radio-group {
+      display: none;
+    }
+  }
+}

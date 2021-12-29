@@ -1,0 +1,49 @@
+//.page-content-wrap {
+//  //:global {
+//  //
+//  //}
+//
+//
+//}
+
+.page-content {
+  position: relative;
+  padding: 0;
+  background-color: #fff;
+  .class-model-left {
+    position: absolute;
+    left:10px;
+    width: 60%;
+    .class-model-left-top {
+      margin-bottom: 10px;
+      .class-hand-change {
+        color: red;
+      }
+      .class-span-label {
+        font-weight: 700;
+        margin-left: 5%;
+      }
+      .create-row-data {
+        background-color: #9ED3D7;
+      }
+    }
+  }
+
+  .class-model-right {
+    position: absolute;
+    right:10px;
+    width: 38%;
+    :global {
+      .ant-card-head {
+        min-height: auto;
+        text-align: center;
+        .ant-card-head-title {
+          font-weight: 800;
+        }
+      }
+    }
+  }
+}
+
+
+

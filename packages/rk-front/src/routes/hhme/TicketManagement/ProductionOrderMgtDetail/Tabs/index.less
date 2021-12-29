@@ -1,0 +1,41 @@
+.dropDown {
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.data-click-ticket-management {
+  background-color: #F0FFFE !important;
+}
+
+.listTable {
+  :global {
+    .listTableSelectedRow {
+      background: #f0fffe;
+    }
+
+    .expandHidden {
+      .ant-table-row-expand-icon,
+      .ant-table-row-collapsed {
+        display: none;
+      }
+    }
+
+    .ant-table-expanded-row {
+      td:nth-child(2) {
+        // padding: 0 !important;
+      }
+
+      .ant-table-wrapper {
+        td:nth-child(2) {
+          padding-left: 16px !important;
+          padding-right: 16px !important;
+        }
+      }
+    }
+
+    .ant-table-expanded-row:hover {
+      cursor: no-drop;
+    }
+  }
+}

@@ -1,0 +1,323 @@
+.eqCheck_base-content {
+  width: 100%;
+  height: 520px;
+  border: 1px solid #e0e0e0;
+  :global {
+    .ant-form-item-label label {
+      color: #333333;
+    }
+  }
+
+  .eqCheck_base-up {
+    height: 220px;
+    border-bottom: 1px dashed #e0e0e0;
+    .eqCheck_base-search {
+      height: 70px;
+      padding: 14px 0 0 13px;
+      width: 100%;
+      :global {
+        .ant-form-item {
+          .ant-form-item-label {
+            line-height: 56px;
+            vertical-align: baseline !important;
+          }
+          .ant-form-item-control-wrapper {
+            .ant-form-item-children .ant-input {
+              width: 94%;
+              height: 56px;
+              line-height: 50px;
+              border-radius: 0 !important;
+              position: absolute;
+            }
+          }
+        }
+      }
+
+      .eqCheck_base-scanner {
+        position: absolute;
+        width: 100%;
+        height: 56px;
+        padding: 10px 10px;
+        border: 1px solid #e0e0e0;
+        border-right: 0;
+        img {
+          display: inline-block;
+          width: 28px;
+          height: 28px;
+          margin: 0 0 6px 3px;
+        }
+      }
+    }
+  }
+}
+
+.eqCheck_base-info {
+  margin: 8px 18px 0 18px;
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+      .ant-form-item-label {
+        line-height: 24px;
+        text-align: left;
+      }
+      .ant-form-item-control {
+        line-height: 24px;
+      }
+    }
+  }
+  .eqCheck_eq-check-type {
+    :global {
+      .ant-form-item-label {
+        text-align: left;
+        line-height: 38px;
+      }
+    }
+  }
+  .eqCheck_base-img {
+    width: 100%;
+    height: 240px;
+    border: 1px solid #fff;
+    padding: 12px;
+    img {
+      display: inline-block;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.eqCheck_check-content {
+  width: 100%;
+  height: 520px;
+  padding: 14px 12px 0 12px;
+  overflow-y: scroll;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 10px;
+  .eqCheck_check-content-outside {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 1px dashed #cccccc;
+  }
+  .eqCheck_check-content-inside {
+    width: 25%;
+    // height: 167px;
+    float: left;
+    padding: 0 3px 0 3px;
+    margin-bottom: 5px;
+    .eqCheck_check-item {
+      height: 100%;
+      border: 1px solid #cccccc;
+      border-radius: 8px;
+      .eqCheck_check-popover {
+        width: 100px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .eqCheck_check-title {
+        padding: 0 10px 0 10px;
+        height: 38px;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+        background-color: #cccccc;
+        border-bottom: 1px solid #cccccc;
+        color: #333;
+      }
+      .eqCheck_check-name {
+        float: left;
+        line-height: 38px;
+        overflow: hidden;
+        width: 90%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+      .eqCheck_check-his {
+        float: right;
+        width: 10%;
+        line-height: 38px;
+      }
+      .eqCheck_check-info-content {
+        display: table;
+        width: 100%;
+        height: 77px;
+        table-layout: fixed;
+        .eqCheck_check-info {
+          height: 77px;
+          padding: 0 12px 0 12px;
+          display: table-cell;
+          vertical-align: middle;
+          color: #333333;
+          font-size: 12px;
+          text-align: center;
+          border-bottom: 1px solid #979797;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+          .check-judge {
+            color: #333333;
+          }
+        }
+      }
+      .eqCheck_check-button {
+        color: #fff;
+        margin: 8px 5px 0 0;
+        display: inline-block;
+      }
+      button {
+        border: 0;
+        color: #fff;
+        height: 30px;
+        padding: 0 12px;
+      }
+      .eqCheck_check-button-ok {
+        background-color: rgb(21, 183, 149);
+        margin-right: 10px;
+      }
+      .eqCheck_check-button-ng {
+        background-color: #FE5B5B;
+      }
+      .eqCheck_check-button-disabled {
+        background-color: #bbb;
+      }
+      .eqCheck_check-decision-input,
+      .eqCheck_check-value-input {
+        height: 40px;
+        :global {
+          .ant-form {
+            margin: 5px 0 0 10px;
+          }
+          .ant-form-item {
+            display: inline-block;
+            margin-bottom: 0;
+            .ant-form-item-label {
+              line-height: 30px;
+              vertical-align: baseline !important;
+            }
+            .ant-form-item-control {
+              line-height: 30px;
+            }
+            .ant-form-item-control-wrapper {
+              display: inline-block;
+              .ant-form-item-children .ant-input {
+                width: 50px;
+                height: 30px;
+                line-height: 30px;
+                border-radius: 0 !important;
+              }
+            }
+          }
+        }
+        .eqCheck_check-input-ok {
+          background-color: rgb(21, 183, 149);
+          margin-right: 10px;
+          float: right;
+          // margin-top: 10px;
+        }
+        .eqCheck_check-input-ng {
+          background-color: #FE5B5B;
+          margin-right: 10px;
+          float: right;
+          // margin-top: 10px;
+        }
+      }
+
+      .eqCheck_check-decision-input {
+        height: 40px;
+        :global {
+          .ant-form {
+            float: right;
+            margin-right: 10px;
+          }
+          .ant-form-item-control {
+            line-height: 30px;
+          }
+        }
+        .eqCheck_check-button {
+          margin: 3px 0 0 5px;
+        }
+      }
+      .eqCheck_check-value-input {
+        height: 40px;
+        :global {
+          .ant-form {
+            float: left;
+            margin-left: 10px;
+          }
+          .ant-form-item-control {
+            line-height: 30px;
+          }
+        }
+        .eqCheck_check-button {
+          float: right;
+        }
+      }
+      .eqCheck_check-input {
+        padding: 5px 5px 0 5px;
+        height: 35px;
+        :global {
+          .ant-form {
+            width: 100%;
+          }
+          .ant-form-item {
+            width: 100%;
+            margin-bottom: 0;
+            .ant-form-item-label {
+              width: 100%;
+            }
+            .ant-form-item-control {
+              line-height: 30px;
+            }
+            .ant-form-item-control-wrapper {
+              display: inline-block;
+              width: 100%;
+              .ant-form-item-children .ant-input {
+                width: 100%;
+              }
+            }
+          }
+        }
+      }
+      .eqCheck_check-input-remark {
+        :global {
+          .ant-form-item {
+            margin-bottom: 0;
+          }
+          .ant-form-item-label {
+            text-align: left;
+          }
+          .ant-form-item-control {
+            line-height: 30px;
+          }
+        }
+      }
+    }
+  }
+
+  .eqCheck_check-content-inside-ok {
+    .eqCheck_check-item {
+      border: 1px solid rgb(21, 183, 149);
+      .eqCheck_check-title {
+        background-color: rgb(21, 183, 149);
+        border-bottom: 1px solid rgb(21, 183, 149);
+        color: #fff;
+      }
+    }
+  }
+
+  .eqCheck_check-content-inside-ng {
+    .eqCheck_check-item {
+      border: 1px solid #FE5B5B;
+      .eqCheck_check-title {
+        background-color: #FE5B5B;
+        border-bottom: 1px solid #FE5B5B;
+        color: #fff;
+      }
+    }
+  }
+}
+
+:global {
+  .ant-popover {
+    max-width: 300px;
+  }
+}

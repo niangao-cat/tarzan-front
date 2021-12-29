@@ -1,0 +1,27 @@
+.inbound-workbench {
+  :global {
+    .ued-detail-card-table {
+      .ant-card-extra {
+        padding: 0;
+      }
+    }
+  }
+  .inbound-workbench_table {
+    :global {
+      .ant-card.ued-detail-card > .ant-card-head,
+      .ant-card.ued-detail-card-table > .ant-card-head {
+        padding: 0 16px;
+      }
+      .ant-card.ued-detail-card > .ant-card-head::before,
+      .ant-card.ued-detail-card-table > .ant-card-head::before {
+        top: 5px;
+      }
+      .ued-detail-card-table {
+        .ant-card-head {
+          border-bottom: 0;
+          min-height: 15px;
+        }
+      }
+    }
+  }
+}

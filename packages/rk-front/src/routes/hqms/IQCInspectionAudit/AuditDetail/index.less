@@ -1,0 +1,33 @@
+.top-form-info {
+  .top-form-info-span {
+    overflow: hidden; //超出的文本隐藏
+    text-overflow: ellipsis; //溢出用省略号显示
+    white-space: nowrap;
+  }
+
+  :global {
+    .ant-form-item-label {
+      line-height: 20px;
+    }
+
+    .ant-form-item-control {
+      line-height: 20px;
+    }
+  }
+}
+
+.file {
+  :global {
+    .anticon-close-circle:before {
+      color: #06b809;
+    }
+  }
+}
+
+.search {
+  :global {
+    .ant-form-item {
+      margin-bottom: 0;
+    }
+  }
+}

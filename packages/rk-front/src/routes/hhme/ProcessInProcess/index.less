@@ -1,0 +1,336 @@
+.renderProcessAxis {
+  width: 1464px;
+  padding: 20px;
+  height: 100%;
+  background: rgba(245, 249, 253, 1);
+  box-shadow: 2px 1px 7px 0 rgba(0, 0, 0, 0.17);
+}
+
+.more-fields-form {
+  height: 70px;
+  padding: 15px 0;
+
+  :global {
+    .ant-row {
+      .ant-form-item-label label {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 22px;
+      }
+    }
+  }
+}
+
+.process-axis {
+  float: left;
+  width: 312px;
+
+  .process-axis-top {
+    width: 148px;
+    height: 50px;
+    padding: 7px;
+    background-image: url('../../../assets/pro.png');
+
+    .process-axis-top-col {
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 14px;
+      width: 36px;
+      overflow: hidden; //超出的文本隐藏
+      text-overflow: ellipsis; //溢出用省略号显示
+      white-space: nowrap;
+    }
+
+    .process-axis-top-col-name {
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 14px;
+      width: 65px;
+      overflow: hidden; //超出的文本隐藏
+      text-overflow: ellipsis; //溢出用省略号显示
+      white-space: nowrap;
+    }
+
+    .process-axis-top-col-now {
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 14px;
+      color: #1faafb;
+    }
+
+    .process-axis-top-col-over {
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 14px;
+      color: #536bd7;
+    }
+
+    .process-axis-top-row-over:before {
+      width: 2px;
+      height: 8px;
+      background-color: #536bd7;
+      pointer-events: none;
+      float: left;
+      margin-top: 4px;
+    }
+
+    .process-axis-top-row-now:before {
+      width: 2px;
+      height: 10px;
+      background-color: #008bdc;
+      pointer-events: none;
+      float: left;
+      margin-top: 2px;
+    }
+  }
+
+  .process-axis-mid {
+    .top-circle {
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+      background-color: #536bd7;
+      text-align: center;
+      margin: 0 auto;
+    }
+
+    .top-number {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      color: #111;
+      overflow: hidden; //超出的文本隐藏
+      text-overflow: ellipsis; //溢出用省略号显示
+      white-space: nowrap;
+      width: 120px;
+    }
+  }
+
+  .process-axis-foot {
+    .process-axis-foot-hr {
+      border: 1px dashed #30698e;
+      height: 40px;
+      width: 0;
+      margin: -26px 85px 0;
+    }
+
+    .process-axis-foot-info {
+      width: 148px;
+      height: 45px;
+      background: #d8e7ff;
+      border-radius: 5px;
+      border: 1px solid rgba(69, 172, 241, 1);
+      margin-left: 87px;
+
+      .process-axis-foot-info-row:before {
+        width: 2px;
+        height: 10px;
+        background-color: #e86a6a;
+        pointer-events: none;
+        float: left;
+        margin-top: 2px;
+      }
+
+      .process-axis-foot-info-row {
+        padding: 7px;
+
+        .process-axis-foot-col-stock {
+          font-size: 10px;
+          font-weight: 400;
+          line-height: 14px;
+          color: #E86A6A;
+        }
+
+        .process-axis-foot-info-col {
+          font-size: 10px;
+          font-weight: 400;
+          line-height: 14px;
+          width: 36px;
+          overflow: hidden; //超出的文本隐藏
+          text-overflow: ellipsis; //溢出用省略号显示
+          white-space: nowrap;
+        }
+
+        .process-axis-foot-info-col-name {
+          font-size: 10px;
+          font-weight: 400;
+          line-height: 14px;
+          width: 65px;
+          overflow: hidden; //超出的文本隐藏
+          text-overflow: ellipsis; //溢出用省略号显示
+          white-space: nowrap;
+        }
+      }
+
+      // :global{
+
+      // }
+    }
+  }
+}
+
+.process-axis-left {
+  float: left;
+  width: 312px;
+
+  .process-axis-top {
+    width: 148px;
+    height: 50px;
+    padding: 7px;
+    margin-left: 86px;
+    background-image: url('../../../assets/pro.png');
+
+    .process-axis-top-col {
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 14px;
+      width: 36px;
+      overflow: hidden; //超出的文本隐藏
+      text-overflow: ellipsis; //溢出用省略号显示
+      white-space: nowrap;
+    }
+
+    .process-axis-top-col-name {
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 14px;
+      width: 65px;
+      overflow: hidden; //超出的文本隐藏
+      text-overflow: ellipsis; //溢出用省略号显示
+      white-space: nowrap;
+    }
+
+    .process-axis-top-row-over:before {
+      width: 2px;
+      height: 8px;
+      background-color: #536bd7;
+      pointer-events: none;
+      float: left;
+      margin-top: 4px;
+    }
+
+    .process-axis-top-row-now:before {
+      width: 2px;
+      height: 8px;
+      background-color: #008bdc;
+      pointer-events: none;
+      float: left;
+      margin-top: 4px;
+    }
+
+    .process-axis-top-col-now {
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 14px;
+      color: #1faafb;
+    }
+
+    .process-axis-top-col-over {
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 14px;
+      color: #536bd7;
+    }
+  }
+
+  .process-axis-mid {
+    margin-left: 86px;
+
+    .process-axis-mid-div {
+      .process-axis-mid-derLef {
+        width: 157px !important;
+      }
+
+      .top-circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 10px;
+        background-color: #536bd7;
+        text-align: center;
+        margin: 0 auto;
+      }
+
+      .process-axis-mid-derRig {
+        width: 94px !important;
+      }
+    }
+
+    .top-number {
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 20px;
+      color: #111;
+      overflow: hidden; //超出的文本隐藏
+      text-overflow: ellipsis; //溢出用省略号显示
+      white-space: nowrap;
+      width: 120px;
+    }
+  }
+
+  .process-axis-foot {
+    .process-axis-foot-hr {
+      border: 1px dashed #30698e;
+      height: 40px;
+      width: 0;
+      margin: -26px 85px 0 !important;
+    }
+
+    .process-axis-foot-info {
+      width: 148px;
+      height: 45px;
+      background: #d8e7ff;
+      border-radius: 5px;
+      border: 1px solid rgba(69, 172, 241, 1);
+      margin-left: 10px !important;
+
+      .process-axis-foot-info-row:before {
+        width: 2px;
+        height: 8px;
+        background-color: #e86a6a;
+        pointer-events: none;
+        float: left;
+        margin-top: 5px;
+      }
+
+      .process-axis-foot-info-row {
+        padding: 7px;
+
+        .process-axis-foot-col-stock {
+          font-size: 10px;
+          font-weight: 400;
+          line-height: 14px;
+          color: #E86A6A;
+        }
+
+        .process-axis-foot-info-col {
+          font-size: 10px;
+          font-weight: 400;
+          line-height: 14px;
+          width: 36px;
+          overflow: hidden; //超出的文本隐藏
+          text-overflow: ellipsis; //溢出用省略号显示
+          white-space: nowrap;
+        }
+
+        .process-axis-foot-info-col-name {
+          font-size: 10px;
+          font-weight: 400;
+          line-height: 14px;
+          width: 65px;
+          overflow: hidden; //超出的文本隐藏
+          text-overflow: ellipsis; //溢出用省略号显示
+          white-space: nowrap;
+        }
+      }
+
+      // :global{
+
+      // }
+    }
+  }
+}
+
+.process-divider {
+  margin-top: -87px;
+  margin-bottom: -84px;
+}

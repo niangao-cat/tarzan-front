@@ -1,0 +1,156 @@
+/**
+ * FilterForm - 搜索栏
+ * @date: 2019-7-29
+ * @author: hdy <deying.huang@hand-china.com>
+ * @version: 0.0.1
+ * @copyright Copyright (c) 2019, Hand
+ */
+import React from 'react';
+import { connect } from 'dva';
+import { Form, Button, Input, Row, Col } from 'hzero-ui';
+import { Bind } from 'lodash-decorators';
+import intl from 'utils/intl';
+import Lov from 'components/Lov';
+import formatterCollections from 'utils/intl/formatterCollections';
+import { getCurrentOrganizationId } from 'utils/utils';
+import {
+  SEARCH_FORM_CLASSNAME,
+  FORM_COL_4_LAYOUT,
+  SEARCH_COL_CLASSNAME,
+  SEARCH_FORM_ITEM_LAYOUT,
+  SEARCH_FORM_ROW_LAYOUT,
+} from 'utils/constants';
+
+const modelPrompt = 'tarzan.org.childSteps.model.childSteps';
+/**
+ * 使用 Form.Item 组件
+ */
+const FormItem = Form.Item;
+
+/**
+ * 使用 Select 的 Option 组件
+ */
+// const {Option} = Select;
+
+/**
+ * 搜索栏
+ * @extends {Component} - React.Component
+ * @reactProps {Object} childSteps - 数据源
+ * @reactProps {Object} form - 表单对象
+ * @return React.element
+ */
+@connect(({ childSteps, loading }) => ({
+  childSteps,
+  tenantId: getCurrentOrganizationId(),
+  fetchLocatorGroupLoadng: loading.effects['childSteps/fetchLocatorGroupList'],
+}))
+@Form.create({ fieldNameProp: null })
+@formatterCollections({
+  code: 'tarzan.org.childSteps',
+})
+export default class FilterForm extends React.Component {
+  // componentDidMount() {
+  //   // this.input.onChange()
+  //   console.log(this.input, this.input);
+  // }
+
+  // onRef=ref=>{
+  // this.input = node
+  // }
+  /**
+   * 查询数据
+   * @param {object} page 页面基本信息数据
+   */
+  @Bind()
+  fetchQueryList() {
+    const { form, onSearch } = this.props;
+    form.validateFields((err, fieldsValue) => {
+      if (!err) {
+        onSearch(fieldsValue);
+        // dispatch({
+        //   type: 'childSteps/fetchMessageList',
+        //   payload: {
+        //     ...fieldsValue,
+        //     page: pagination,
+        //   },
+        // });
+      }
+    });
+  }
+
+  /**
+   * 查询按钮点击
+   * @returns
+   */
+  @Bind()
+  queryValue() {
+    this.fetchQueryList();
+  }
+
+  /**
+   * 重置form表单
+   */
+  @Bind()
+  handleFormReset() {
+    const { form, onResetSearch } = this.props;
+    form.resetFields();
+    onResetSearch();
+  }
+
+  /**
+   * 渲染方法
+   * @returns
+   */
+  render() {
+    const { fetchLocatorGroupLoadng, form } = this.props;
+    const { getFieldDecorator } = form;
+    const tenantId = getCurrentOrganizationId();
+    return (
+      <Form className={SEARCH_FORM_CLASSNAME}>
+        <Row {...SEARCH_FORM_ROW_LAYOUT}>
+          <Col {...FORM_COL_4_LAYOUT}>
+            <Form.Item
+              {...SEARCH_FORM_ITEM_LAYOUT}
+              label={intl.get(`${modelPrompt}.substepName`).d('子步骤编码')}
+            >
+              {getFieldDecorator('substepName')(<Input />)}
+            </Form.Item>
+          </Col>
+          <Col {...FORM_COL_4_LAYOUT}>
+            <Form.Item
+              {...SEARCH_FORM_ITEM_LAYOUT}
+              label={intl.get(`${modelPrompt}.description`).d('子步骤描述')}
+            >
+              {getFieldDecorator('description')(<Input />)}
+            </Form.Item>
+          </Col>
+          <Col {...FORM_COL_4_LAYOUT}>
+            <Form.Item
+              {...SEARCH_FORM_ITEM_LAYOUT}
+              label={intl.get(`${modelPrompt}.locatorGroupName`).d('所属站点')}
+            >
+              {getFieldDecorator('siteId')(
+                <Lov code="MT.SITE" queryParams={{ tenantId, siteType: 'MANUFACTURING' }} />
+              )}
+            </Form.Item>
+          </Col>
+          <Col {...FORM_COL_4_LAYOUT} className={SEARCH_COL_CLASSNAME}>
+            <FormItem>
+              <Button style={{ marginLeft: 8 }} onClick={this.handleFormReset}>
+                {intl.get('hzero.common.button.reset').d('重置')}
+              </Button>
+              <Button
+                type="primary"
+                htmlType="submit"
+                loading={fetchLocatorGroupLoadng}
+                onClick={this.queryValue}
+              >
+                {intl.get('hzero.common.button.search').d('查询')}
+              </Button>
+            </FormItem>
+          </Col>
+        </Row>
+      </Form>
+    );
+  }
+}
